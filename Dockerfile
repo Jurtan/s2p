@@ -22,7 +22,7 @@ RUN apt-get update && apt-get install -y \
     python-software-properties \
     unzip
 RUN pip install -U pip
-RUN pip install utm bs4 lxml requests
+RUN pip install utm bs4 lxml requests rasterio
 
 # Install GDAL 2.x from ubuntugis-stable
 RUN apt-get install dialog apt-utils -y
